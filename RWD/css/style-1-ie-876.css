@@ -1,0 +1,7 @@
+/*
+ * template-2 ie hack css
+ */
+
+.main-nav > li > a {
+    width: 60px;  
+}

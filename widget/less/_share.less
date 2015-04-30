@@ -1,0 +1,125 @@
+﻿@import "_normalize";
+@import "_font";
+@import url("animate.min.css");
+@import "_fonticon";
+@import "_config";
+@import "_mix";
+@import "_sprite";
+
+/*
+--- share ---
+*/
+
+@charset "UTF-8";
+
+* {
+    .border-box();
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    .font-hei();
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: @base-bg;
+}
+
+section {
+    display: block;
+    padding: 15px;
+}
+
+//下拉菜单类型一 （没有input结构）
+.dropdown-type1-wrapper {
+    position: relative;
+    cursor: pointer;
+
+    * {
+        .transition( all,0.3s,ease,0 );
+    }
+
+    .dt1-value {
+        border: 1px solid @form-border-color;
+        .rounded( 3px );
+        height: 36px;
+        line-height: 34px;
+        font-size: @form-font-size;
+        color: @form-label-color;
+        background-color: @form-item-bg;
+        padding: 0 30px 0 15px;
+        .text-hide();
+
+        > i {
+            position: absolute;
+            z-index: 1;
+            right: 15px;
+            top: 8px;
+            font-size: @form-font-size + 0.4rem;
+            color: @form-label-color;
+        }
+    }
+
+    .dt1-menu {
+        position: absolute;
+        z-index: 1;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        border: 1px solid @form-border-color;
+        .reset-list( none,block,@form-font-size,36px );
+        padding: 10px 0;
+        .border-radius( 0,0,3px,3px );
+        background-color: @form-item-bg * .5;
+        height: 202px;
+        overflow: auto;
+        display: none;
+
+        > li {
+            height: 36px;
+            padding: 0 15px;
+            color: @form-label-color;
+
+            &:hover {
+                color: @form-value-color;
+                background-color: @form-item-bg;
+            }
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+
+        .dt1-value {
+            border-color: @form-border-color + #111;
+            color: @form-value-color;
+            background-color: @form-item-bg * .5;
+
+            > i {
+                color: @form-value-color;  
+            }
+        }
+    }
+
+    &.active {
+
+        .dt1-value {
+            .border-radius( 3px,3px,0,0 );
+
+            > i {
+                .rotate( 180deg );
+                top: 9px;
+            }
+        }
+
+        .dt1-menu {
+            display: block;
+        }
+    }
+}

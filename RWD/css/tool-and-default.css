@@ -1,0 +1,191 @@
+/*
+ * default style
+ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", verdana, Helvetica, Arial, Sans-Serif;
+}
+
+html {
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html, body {
+	width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    line-height: 1.428571429;
+    font-size: 14px;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition-property: background, color, border;
+    transition-property: background, color, border;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background: transparent;
+}
+
+a:focus,
+a:active,
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+/* fix button-text's vetically in firefox */
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	padding: 0;
+	box-sizing: border-box;
+	width: auto;
+}
+
+input[type="search"] {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    line-height: 0;
+    font-size: 0;
+}
+
+img {
+    border: 0;
+    display: block;
+    outline: none;
+}
+
+/*
+ * tool css
+ */
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left_inline {
+    float: left;
+    display: inline !important;
+}
+
+.float_right_line {
+    float: right;
+    display: inline !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display:table;
+    line-height:0;
+    content:"";
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.font12px {
+    font-size: 12px !important;
+}
+
+.font14px {
+    font-size: 14px !important;
+}
+
+.font16px {
+    font-size: 16px !important;
+}
+
+.font18px {
+    font-size: 18px !important;
+}
+
+.font20px {
+    font-size: 20px !important;
+}
+
+.font22px {
+    font-size: 22px !important;
+}
+
+.font24px {
+    font-size: 24px !important;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}

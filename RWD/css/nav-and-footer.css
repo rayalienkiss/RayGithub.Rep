@@ -1,0 +1,241 @@
+/*
+ * template mini bar css
+ */
+/* dark style */
+.nav-wrapper {
+    width: 100%;
+    background-color: #54667a;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-wrapper > div {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.website-logo-box {
+    height: 58px;
+    line-height: 58px;
+    color: #fff;
+    font-size: 34px;
+    float: left;
+    padding-right: 15px;
+    font-family: Arial, Sans-Serif;
+}
+
+.nav-ul > li {
+    float: left;
+}
+
+.nav-ul > li > a {
+   display: block;
+   color: #fff;
+   line-height: 58px;
+   height: 58px;
+   padding: 0 15px;
+   font-size: 14px;
+}
+
+.nav-ul > li > a:hover {
+   background-color: #475767;
+}
+
+.nav-ul > li.active > a {
+   background-color: #37b0e9;
+}
+
+.nav-rwd {
+  position: relative;
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+.nav-rwd-get {
+    display: block;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.nav-rwd-get.active {
+    background-color: #475767;
+}
+
+.rwd-menu-wrapper {
+    width: 100%;
+    background-color: #475767;
+    display: none;
+}
+
+.nav-rwd-menu {
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.nav-rwd-menu > li {
+    line-height: none;
+    font-size: 0;
+}
+
+.nav-rwd-menu > li > a {
+    display: block;
+    font-size: 14px;
+    line-height: 46px;
+    height: 46px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-bottom: 1px solid #4c5a6a;
+    transition-duration: 0s;
+}
+
+.nav-rwd-menu > li > a:active,
+.nav-rwd-menu > li > a:hover {
+    background-color: #4c5a6a;
+}
+
+.nav-rwd-menu > li.active > a {
+    background-color: #323e4a;
+}
+
+.searcher-wrapper-RWD {
+    display: none;
+    border-top: 1px solid #475767;
+    background-color: #617286;
+}
+
+.searcher-box {
+    position: relative;
+    padding: 0 40px 0 0;
+}
+
+.searcher-box .left > input[type="search"]{
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    width: 100%;
+    outline: 0;
+    border: none;
+    color: #fff;
+    background-color: #617286;
+    line-height: initial;
+    font-size: 14px;  
+}
+
+.searcher-box .right {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.searcher-box .right > button[type="submit"] {
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    background-color: #617286;
+    font-size: 18px;
+    color: #fff;  
+}
+
+.searcher-opt-wrapper {
+    background-color: #617286;
+    padding: 10px 10px 20px 10px;
+    display: none;
+}
+
+.searcher-opt-wrapper > div {
+    text-align: center;
+    line-height: 0;
+    font-size: 0;    
+}
+
+.searcher-opt-wrapper > div > label {
+    display: inline-block;
+    width: 33%;
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cbcbcb;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #7f95af;
+    box-sizing: border-box;
+}
+
+.searcher-opt-wrapper > div > label:first-child {    
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+}
+
+.searcher-opt-wrapper > div > label:last-child {    
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+}
+
+.searcher-opt-wrapper > div > label:hover {
+    color: #fff;
+}
+
+.searcher-opt-wrapper > div > label.active {
+    background-color: #7f95af;
+    color: #fff;
+}
+
+.fixed-fixbox {
+    display: block;
+    height: 58px;
+    max-width: 100%;
+}
+
+@media ( max-width: 768px ) {
+    
+    .nav-wrapper {
+        width: 100%;
+        position: relative;
+    }
+
+    .website-logo-box {
+        height: 38px;
+        line-height: 38px;
+        color: #fff;
+        font-size: 24px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .nav-ul {
+        display: none;
+    }
+
+    .nav-rwd {
+        display: block;
+    }
+
+    .searcher-wrapper-RWD {
+        display: block;
+    }
+
+    .fixed-fixbox {
+        display: none;
+    }
+
+    .searcher-opt-wrapper {
+        display: block;
+    }
+}
+
+/* bright style */
