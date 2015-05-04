@@ -57,6 +57,22 @@
         }
         document.write(box('ray', 32));
 
+        var box = {
+            'name': 'ray',
+            'age': 32,
+            'height': 175
+        };
+
+        with (box) {
+
+            var n = name,
+                a = age,
+                h = height;
+        };
+
+        alert(n + a + h);
+
+
     </script>
 
 </body>
