@@ -1,19 +1,54 @@
 
-function check1() {
+//function box(name, age) {
+//    return '名字：' + name + '<br/>' + '年龄：' + age;
+//}
+//document.write(box('ray', 32));
 
-    var a1 = "you should know",
-        a2 = "you need to know"
+//var box = {
+//    'name': 'ray',
+//    'age': 32,
+//    'height': 175
+//};
 
-    document.getElementById("sampleone").innerHTML = a1;
-    document.getElementById("sampletwo").innerHTML = a2;
+//with (box) {
+
+//    var n = name,
+//        a = age,
+//        h = height;
+//};
+
+//alert(n + a + h);
+
+//function vcone(one, two) {
+//    return 'ok' + one + two;
+//}
+
+//document.write('<br/>' + vcone(1, true));
+
+//function dox(num) {
+//    if (num > 5) return '大于5';
+//    return 100;
+//}
+
+//document.write('<br/>' + dox(6));
+
+//var width = document.documentElement.clientHeight;
+//document.write('<br/>浏览器窗口高度为&nbsp;' + width + 'px');
+
+function argumentsExample() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
 }
+alert(argumentsExample(4, 5));
 
-var sTest = "hello ";
-sTest2 = sTest + "world";
-alert(sTest2);
+function argumentsExample2(num) {
+    return num + 100;
+};
 
-var oTemp;
-alert(oTemp == undefined);
-
-var exampletypeof = 123;
-alert(typeof exampletypeof);
+function argumentsExample2(num) {
+    return num + 200;
+};
+alert(argumentsExample2(2));
