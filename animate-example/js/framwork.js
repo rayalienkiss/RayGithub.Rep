@@ -1,6 +1,6 @@
 
 //function box(name, age) {
-//    return 'Ãû×Ö£º' + name + '<br/>' + 'ÄêÁä£º' + age;
+//    return 'åå­—ï¼š' + name + '<br/>' + 'å¹´é¾„ï¼š' + age;
 //}
 //document.write(box('ray', 32));
 
@@ -26,14 +26,14 @@
 //document.write('<br/>' + vcone(1, true));
 
 //function dox(num) {
-//    if (num > 5) return '´óÓÚ5';
+//    if (num > 5) return 'å¤§äº5';
 //    return 100;
 //}
 
 //document.write('<br/>' + dox(6));
 
 //var width = document.documentElement.clientHeight;
-//document.write('<br/>ä¯ÀÀÆ÷´°¿Ú¸ß¶ÈÎª&nbsp;' + width + 'px');
+//document.write('<br/>æµè§ˆå™¨çª—å£é«˜åº¦ä¸º&nbsp;' + width + 'px');
 
 function argumentsExample() {
     var sum = 0;
