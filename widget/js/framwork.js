@@ -1,35 +1,23 @@
+
 //下拉菜单类型一 （没有input结构）
-function dt1() {
+function Dt1BeginSelect(elem) {
 
-    var tagValue = document.getElementById('a');
-    var menu = document.getElementById('b');
-    var wrapper = document.getElementById('c');
-
-    if (menu.style.display == "none") {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
+    if (elem.className == "dropdown-type1-wrapper") {
+        elem.className = "dropdown-type1-wrapper active"
+        elem.onmouseup = function () {
+            this.className = "dropdown-type1-wrapper"
+        }
     }
-}
 
-$(function() {
-    var $select = $(".dropdown");
-    var $selextSpan = $(".dropdown .dropdown-tag");
-    var $optionUl = $(".dropdown-menu");
-    var $li = $(".dropdown-menu li");
-    var text;
-
-    $select.click(function() {
-        $optionUl.stop().toggle();
-    });
-
-    $li.click(function() {
-        text = $(this).html();
-        $selextSpan.html(text);
-    });
-});
-
-function kitt(){
-    
+    //var ul = elem.parentNode.parentNode;
+    //var li = ul.getElementsByTagName("li");
+    //var selectArea = li[li.length - 1];
+    //if (selectArea.style.display == "block") {
+    //    selectArea.style.display = "none";
+    //}
+    //else {
+    //    selectArea.style.display = "block";
+    //    mouseoverBg(selectArea);
+    //}
 }
 
