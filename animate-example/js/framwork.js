@@ -128,5 +128,13 @@
 //alert(box.valueOf());
 //alert(box.toLocaleString());
 
-var box = ['ray', 32, 175, new Date()]
-alert(box.join('xxx'));
+//var box = ['ray', 32, 175, new Date()]
+//alert(box.join('xxx'));
+
+var box = ['ray', 32, 175];
+box.push('计算机编程');
+box[4] = 'hat';
+alert(box.push('计算机编程','case'));
+alert(box);
+document.write(box.pop());
+alert(box);
