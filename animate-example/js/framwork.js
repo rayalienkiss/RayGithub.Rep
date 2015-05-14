@@ -131,10 +131,81 @@
 //var box = ['ray', 32, 175, new Date()]
 //alert(box.join('xxx'));
 
-var box = ['ray', 32, 175];
-box.push('计算机编程');
-box[4] = 'hat';
-alert(box.push('计算机编程','case'));
-alert(box);
-document.write(box.pop());
-alert(box);
+//var box = ['ray', 32, 175];
+//box.push('计算机编程');
+//box[4] = 'hat';
+//alert(box.push('计算机编程','case'));
+//alert(box);
+//document.write(box.pop());
+//alert(box);
+
+//var box = ['ray', 32, 175];
+//box.shift();
+//box[4] = 'basketball';
+//alert(box.shift());
+//alert(box);
+
+//var box = ['ray', 32, 175];
+//box.unshift('case');
+//alert(box.unshift('me'));
+//box[3] = 'a';
+//alert(box);
+
+//var box = ['ray', 180, 175];
+//alert(box.reverse());
+//box.reverse();
+//alert(box);
+
+//function compare(value1, value2) {
+//    if (value1 < value2) {
+//        return -1;
+//    } else if (value1 > value2) {
+//        return 1;
+//    } else {
+//        return 0;
+//    }
+//};
+
+//var box = [0, 10, 5, 1, 15];
+//alert(box.sort(compare));
+
+//function boxsort(a,b) {
+//    return a - b;
+//}
+
+//var box = [1, 10, 7, 6, 21];
+//alert(box.sort(boxsort));
+
+//var objectList = new Array();
+//function Persion(name, age) {
+//    this.name = name;
+//    this.age = age;
+//}
+//objectList.push(new Persion('jack', 20));
+//objectList.push(new Persion('tony', 25));
+//objectList.push(new Persion('stone', 26));
+//objectList.push(new Persion('mandy', 23));
+////按年龄从小到大排序
+//objectList.sort(function (a, b) {
+//    return a.age - b.age
+//});
+//for (var i = 0; i < objectList.length; i++) {
+//    document.writeln('<br />age:' + objectList[i].age + ' name:' + objectList[i].name);
+//}
+
+//var box = ['ray', 32, 175, ];
+//var box2 = box.concat('dive', '155kg');
+//alert(box2);
+
+//var box = ['a', 293, true, 3, 'object', 'ray', 6, 'c', 'asssss', 9, 001];
+//var box2 = box.slice(5,8);
+//alert(box2);
+
+//var box = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+//var box2 = box.splice(3, 2);
+//alert(box2);
+
+//var box = ['a', 293, true, 3, 'object', 'ray', 6, 'c', 'asssss', 9, 1];
+//var box2 = box.splice(2, 5, 0, 0);
+//alert(box2); 
+//document.write(box);
