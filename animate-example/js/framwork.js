@@ -209,3 +209,112 @@
 //var box2 = box.splice(2, 5, 0, 0);
 //alert(box2); 
 //document.write(box);
+
+/*
+ * 时间与日期（上）
+ */
+
+//var box = new date();
+//alert(box);
+
+//alert(Date.parse('4/4/2004'));
+
+//var box = new Date(Date.parse('4/4/2004'));
+//alert(box);
+
+//var box = new Date(1810080008000);
+//alert(box);
+
+//var box = new Date('may/23/2004');
+//alert(box);
+
+//var box = new Date(Date.UTC(2007, 10));
+//alert(box);
+
+//var box2 = new Date(Date.UTC(2007, 10, 5, 17, 22, 90));
+//alert(box2);
+
+/*
+ * 时间与日期（下）
+ */
+
+//var box = new Date();
+//document.write(box + '<br/>');
+//document.write(typeof box + '<br/><br/>');
+//document.write('toString:&nbsp;&nbsp;&nbsp;' + box.toString() + '<br/>');
+//document.write(typeof box.toString() + '<br/><br/>');
+//document.write('toLocaleString:&nbsp;&nbsp;&nbsp;' + box.toLocaleString() + '<br/>');
+//document.write(typeof box.toLocaleString() + '<br/><br/>');
+//document.write('valueOf:&nbsp;&nbsp;&nbsp;' + box.valueOf() + '<br/>');
+//document.write(typeof box.valueOf() + '<br/><br/>');
+
+//var box = new Date();
+//document.write(box + '<br/>');
+//document.write(typeof box + '<br/><br/>');
+
+//document.write('toString:&nbsp;&nbsp;&nbsp;' + box.toString() + '<br/>');
+//document.write(typeof box.toString() + '<br/><br/>');
+//document.write('toDateString:&nbsp;&nbsp;&nbsp;' + box.toDateString() + '<br/>');
+//document.write(typeof box.toDateString() + '<br/><br/>');
+//document.write('toTimeString:&nbsp;&nbsp;&nbsp;' + box.toTimeString() + '<br/>');
+//document.write(typeof box.toTimeString() + '<br/><br/>');
+
+//document.write('toLocaleString:&nbsp;&nbsp;&nbsp;' + box.toLocaleString() + '<br/>');
+//document.write(typeof box.toLocaleString() + '<br/><br/>');
+//document.write('toLocaleDateString:&nbsp;&nbsp;&nbsp;' + box.toLocaleDateString() + '<br/>');
+//document.write(typeof box.toLocaleDateString() + '<br/><br/>');
+//document.write('toLocaleTimeString:&nbsp;&nbsp;&nbsp;' + box.toLocaleTimeString() + '<br/>');
+//document.write(typeof box.toLocaleTimeString() + '<br/><br/>');
+
+//document.write('toUTCString:&nbsp;&nbsp;&nbsp;' + box.toUTCString() + '<br/>');
+//document.write(typeof box.toUTCString() + '<br/><br/>');
+
+//document.write('valueOf:&nbsp;&nbsp;&nbsp;' + box.valueOf() + '<br/>');
+//document.write(typeof box.valueOf() + '<br/><br/>');
+
+//var box = new Date();
+//document.write(box + '<br/><br/>');
+//document.write(box.getTime() + '<br/><br/>');
+//box.setTime(11);
+//document.write(box + '<br/><br/>');
+
+//document.write(box + '<br/><br/>');
+//document.write(box.getFullYear() + '<br/><br/>');
+//box.setFullYear(2014);
+//document.write(box + '<br/><br/>');
+
+//document.write(box.toLocaleString() + '<br/><br/>');
+//alert(box.getMonth() + 1);
+//box.setMonth(5);
+//document.write(box.toLocaleString() + '<br/><br/>');
+
+//var box = new Date();
+//alert(box.getUTCHours());
+
+/*
+ * 正则表达式（1）
+ */
+
+//var box = new RegExp('box','ig');
+//alert(box);
+
+//var box2 = /box/igm;
+//alert(box2);
+
+//var pattem =/box/i;
+//var str = 'Box';
+//alert(pattem.test(str));
+
+//alert(/box/i.test('box'));
+
+//var pattem =/box/i;
+//var str = 'this is a Box';
+//alert(pattem.test(str));
+
+//var pattem = /box/i;
+//var str = 'this is a Box';
+//alert(pattem.exec(str));
+
+/*
+ * 正则表达式（2）
+ */
