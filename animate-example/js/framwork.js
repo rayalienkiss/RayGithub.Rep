@@ -318,3 +318,41 @@
 /*
  * 正则表达式（2）
  */
+
+//var pattermMatch = /box/ig;
+//var str = 'there are boxes,but they are not a great box';
+////alert(str.match(pattermMatch));
+////alert(typeof str.match(pattermMatch));
+//var strResult = str.match(pattermMatch);
+//alert(strResult);
+
+//var pattermSearch = /box/i;
+//var str = 'there are boxes,but they are not a great box';
+//alert(str.search(pattermSearch));
+
+//var pattermReplace = /box/ig,
+//    str = 'there are boxes,but they are not a great box';
+//alert(str.replace(pattermReplace, 'Ray'));
+
+//var pattermSplit = /box/ig,
+//    str = 'this is a box! it is a box too!';
+//alert(str.split(pattermSplit));
+//alert(typeof str.split(pattermSplit));
+
+//var pattern = /box/ig,
+//    str = 'this is a box! it is a box too!';
+//pattern.test(str);
+//alert(RegExp['$&']);
+
+//var pattern = /google/igm;
+//var str = 'google,google,google';
+//pattern.test(str);
+//alert(pattern.lastIndex);
+
+/*
+ * 正则表达式（3）
+ */
+
+
+
+
