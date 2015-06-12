@@ -48,7 +48,7 @@
 
         <!-- 下拉菜单类型一 -->
         <section>
-            <div class="dropdown-type1-wrapper" onclick="Dt1BeginSelect(this);">
+            <div class="dropdown-type1-wrapper">
                 <div class="dt1-value">
                     请选择其中一个选项
                     <i class="icon-angle-down"></i>
@@ -79,8 +79,8 @@
             </div>
         </section>
 
-        <!--<section>
-            <div class="dropdown-type1-wrapper active">
+        <section>
+            <div class="dropdown-type1-wrapper" onclick="Dt1BeginSelect(this)">
                 <div class="dt1-value">
                     请选择其中一个选项
                     <i class="icon-angle-down"></i>
@@ -109,12 +109,14 @@
                     </li>
                 </ul>
             </div>
-        </section>-->
+        </section>
 
-        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/framwork.js"></script>
+        <script type="text/javascript" src="js/comm.js"></script>
+        <script type="text/javascript" src="js/framwork.min.js"></script>
         <script>
+            $(".dropdown-type1-wrapper").Dt1BeginSelect();
         </script>
 
     </body>

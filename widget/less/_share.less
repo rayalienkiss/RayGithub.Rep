@@ -12,10 +12,6 @@
 
 @charset "UTF-8";
 
-* {
-    .border-box();
-}
-
 html {
     font-size: 62.5%;
 }
@@ -39,9 +35,11 @@ section {
 .dropdown-type1-wrapper {
     position: relative;
     cursor: pointer;
+    .border-box();
 
     * {
-        .transition( all,0.3s,ease,0 );
+        .transition( all,0.2s,ease,0 );
+        .border-box();
     }
 
     .dt1-value {
@@ -67,7 +65,7 @@ section {
 
     .dt1-menu {
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 35px;
         left: 0;
         width: 100%;
