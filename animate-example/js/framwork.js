@@ -353,6 +353,15 @@
  * 正则表达式（3）
  */
 
+//var patterm = /g..gle/;
+//var str = 'gnmgle';
+//alert(patterm.test(str));
+
+//var patterm = /g.*gle/;
+//var str = 'gnmgle';
+//alert(patterm.test(str));
+
+
 
 
 
