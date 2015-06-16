@@ -361,7 +361,66 @@
 //var str = 'gnmgle';
 //alert(patterm.test(str));
 
+//var patterm = /^[^0-9]*oogle/;
+//var str = 'aaoogle';
+//alert(patterm.test(str));
 
+//var patterm = /^\W+oogl\D$/;
+//var str = '))oogle';
+//alert(patterm.test(str));
+
+//var patterm = /^[0-9]{9,9}$/;
+//var str = '123456789';
+//alert(patterm.test(str));
+
+/*
+ * 正则表达式（4）
+ */
+
+//var patterm = /go\sogle/;
+//var str = 'go ogle';
+//alert(patterm.test(str));
+
+//var patterm = /go\sogle\b/;
+//var str = 'go ogle';
+//alert(patterm.test(str));
+
+//var patterm = /go\sogle\b/;
+//var str = 'go ogle';
+//alert(patterm.test(str));
+
+//var patterm = /go\sogle\b|^bing$|soso/;
+//var str = 'bing';
+//alert(patterm.test(str));
+
+//var patterm = /(go\sogle|bing|soso){2,5}$/;
+//var str = 'go oglego ogle';
+//alert(patterm.test(str));
+
+//var patterm = /^this\sis\sa\s(.*)$/;
+//var str = 'this is a google';
+//patterm.test(str);
+//alert(RegExp.$1);
+
+//var patterm = /^this\sis\sa\s(.*)$/;
+//var str = 'this is a google';
+//document.write(str.replace(patterm, '<strong>$1</strong>'));
+
+//var patterm = /(.*)\s(.*)/;
+//var str = 'baidu google';
+//document.write(str.replace(patterm, '$2&nbsp;$1'));
+
+//var patterm = /[a-z]/;
+//var str = 'google';
+//document.write(str.replace(patterm,'1'));
+
+//var p = /8(.*?)8/g;
+//var str = '8google8 8google8 8google8'
+//document.write(str.replace(p,'<b style="color:red;">$1</b>'));
+
+//var p = /8([^8]*)8/;
+//var str = '8google8 8google8 8google8'
+//document.write(str.replace(p,'baidu'));
 
 
 
