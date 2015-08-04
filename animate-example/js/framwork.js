@@ -422,5 +422,71 @@
 //var str = '8google8 8google8 8google8'
 //document.write(str.replace(p,'baidu'));
 
+//var pattern = /^[a-z]+\s[0-9]{4}$/;
+//var str = 'google 2012';
+//alert(pattern.exec(str));    //返回一个包含字符串的数组
 
+//var pattern = /^([a-z]+)\s([0-9]{4})$/; //使用了分组
+//var str = 'google 2012';
+//var a = pattern.exec(str);
+//alert(a.length);
+//alert(a[0]);
+//alert(a[1]);
+//alert(a[2]);
 
+//var str = '123abc';
+//var pattern = /(\d+)([a-z])/; //这个叫捕获性分组，所有的分  组都捕获返回
+//alert(pattern.exec(str)); 
+
+//var str = '123abc';
+//var pattern = /(?:\d+)(?:[a-z])/; //这个叫非捕获性分组，只要在你不需要捕获的那个分组前加上'?:'
+//alert(pattern.exec(str)); 
+ 
+
+//var pattern = /(a?(b?(c?)))/;
+//var a = 'abc';
+//var str = pattern.exec(a);
+//alert(str.length);
+//alert(pattern.exec(a));
+//alert(a[0]); //匹配到整个字符串abc
+//alert(a[1]); //匹配到第1个分组(a?(b?(c?)))
+//alert(a[2]); //匹配到第2个分组(b?(c?))
+//alert(a[3]); //匹配到第3个分组(c?)
+
+//var pattern = /([a-z]+(?=gle))/; //goo后面必须跟着gle才捕获
+//str = 'google';
+//alert(pattern.exec(str));
+
+//var str = ']';
+//var pattern = /\]/;  //用'\'来转义正则里面的特殊字符
+//alert(pattern.exec(str));
+
+//var pattern = /^\d+/mg; //限定了首匹配，并开启换行模式
+//var str = '1.baidu\n2.goole\n3.bing';
+//var result = str.replace(pattern, '#'); //将数字替换成'#'
+//alert(result);
+
+//检查邮政编码
+//var str = 'this is 224000'; //规则是必须6位，必须数字，第一位不为0
+//var pattern = /^[1-9][0-9]{5}$/;
+//alert(pattern.test(str));
+
+//检查文件压缩包
+//var str = '12-+3.zip'; //文件名：字母、数字，然后 . zip/gz/rar/7z
+//var pattern = /^[\w\-\+]+\.zip|gz|rar|7z/;
+//alert(pattern.test(str));
+
+//验证简单电子邮件名称
+//var str = 'rayalienkisss_sdoods.sdccs-sdsd@gmail.com';
+////var pattern = /^[\w\-\+\=]+[\@][\w]+[\.][\w]+/;
+//var pattern = /^([\w\.\-\+\=])+@([\w\.\-])+\.([\w\.])+$/;
+//alert(pattern.test(str));
+
+function ae() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum = sum + arguments[i];
+    };
+    return sum;
+};
+alert(ae(1,2,1));
