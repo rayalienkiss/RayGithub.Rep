@@ -482,11 +482,87 @@
 //var pattern = /^([\w\.\-\+\=])+@([\w\.\-])+\.([\w\.])+$/;
 //alert(pattern.test(str));
 
-function ae() {
-    var sum = 0;
-    for (var i = 0; i < arguments.length; i++) {
-        sum = sum + arguments[i];
-    };
-    return sum;
+//function ae() {
+//    var sum = 0;
+//    for (var i = 0; i < arguments.length; i++) {
+//        sum = sum + arguments[i];
+//    };
+//    return sum;
+//};
+//alert(ae(1,2,1));
+
+//var box = function (num1, num2) {
+//    return num1 + num2;
+//}
+//alert(box(1, 2));
+//alert(typeof box);
+
+//function box1(box2, num1) {
+//    return box2 + num1;
+//};
+//function box2(num2) {
+//    return num2 + 10;
+//};
+//var result = box1(box2(15), 10);
+//alert(result);
+
+//function box1(box2, num1) {
+//    return box2(num1) + num1;
+//};
+//function box2(num2) {
+//    return num2 + 10;
+//};
+//var result = box1(box2, -7);
+//alert(result); 
+
+//function box(num) {
+//    if (num <= 1) {
+//        return 1;
+//    } else {
+//        return num * arguments.callee(num - 1);
+//    }
+//};
+
+//alert(box(4)); 
+
+//this.color = 'red'
+//var box = {
+//    color: 'blue',
+//    sayColor : function() {
+//        document.write( .color);
+//    }
+//};
+
+//alert(this.color);
+//box.sayColor();
+
+//window.color = 'red';
+
+//function sayColor() {
+//    alert(this.color);
+//}
+
+//sayColor();
+
+//var box = {
+//    color: 'blue',
+//};
+
+//box.getSayColor = sayColor;
+
+//box.getSayColor();
+
+//function box(name,age) {
+//    alert(age + name + arguments[2]);
+//}
+//box('ray',32,'aaa');
+
+function box(a,b) {
+    return a + b;
 };
-alert(ae(1,2,1));
+
+function box2(a, b) {
+    return box.apply(this,[a,b]);
+};
+
+alert(box2(1, 2));
