@@ -557,12 +557,65 @@
 //}
 //box('ray',32,'aaa');
 
-function box(a,b) {
-    return a + b;
-};
+//function box(a,b) {
+//    return a + b;
+//};
 
-function box2(a, b) {
-    return box.apply(this,[a,b]);
-};
+//function box2(a, b) {
+//    return box.apply(this,[a,b]);
+//};
 
-alert(box2(1, 2));
+//alert(box2(1, 2));
+
+//function box(a,b,c,d) {
+//    return a + b + 'c' + 'd';
+//};
+
+////alert(box(2,3));
+
+//function box2(a, b) {
+//    return box.apply(this, [a, b]);
+//}; 
+
+//function box3() {
+//    return box.apply(this, arguments);
+//};
+
+//alert(box3(6,6));
+
+//function box(a, b) {
+//    return a + b;
+//};
+
+//function box2(a,b) {
+//    return box.call(this,a,b);
+//};
+
+//alert(box2(6,7));
+
+//window.color = 'red';
+
+//var box = {
+//    color: 'blue',
+//};
+
+//function sayColor() {
+//    alert(this.color);
+//};
+
+//sayColor();
+//sayColor.call(box);
+
+//var box = {};
+//box.name = 'ray';
+//alert(box.name);
+
+//var box = 'ray';
+//box.age = 27;
+//alert(box.age);
+
+//var box = {};
+//box.name = 'ray';
+//var box2 = box;
+//alert(box.name);
+//alert(box2.name);
