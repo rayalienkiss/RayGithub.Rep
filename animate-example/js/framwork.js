@@ -611,7 +611,7 @@
 //alert(box.name);
 
 //var box = 'ray';
-//box.age = 27;
+//box.age =  27;
 //alert(box.age);
 
 //var box = {};
@@ -619,3 +619,83 @@
 //var box2 = box;
 //alert(box.name);
 //alert(box2.name);
+
+//function box(obj) {
+//    obj.name = 'lee';
+//    var obj = {};
+//    obj.name = 'kkk';
+//};
+
+//var obj = {};
+//box(obj);
+//alert(obj.name);
+
+//var box1 = [1, 2, 3];
+//alert(box1 instanceof Array);
+//var box2 = {};
+//alert(box2 instanceof Object);
+//alert(typeof box2);
+//var box3 = /g/g;
+//alert(box3 instanceof RegExp);
+
+//var box = 'lee';
+//var box = new String('lee');
+//alert(typeof box);
+//alert(box instanceof String);
+
+//var box = 'lee';
+//function setBox() {
+//    alert(123);
+//};
+
+//alert(window.box);
+//window.setBox();
+
+//var box = 'blue';
+//function setBox() {
+//    box = 'red';
+//    alert(box);
+//};
+
+//setBox();
+//alert(box);
+
+//var box = 'blue';
+//function setBox(box) {
+//    alert(box);
+//};
+//setBox('red');
+//alert(box); 
+
+//function lv1() {
+//    var box1 = 'blue';
+    
+//    function lv2() {
+//        var box2 = 'red;'
+//        alert(box2);
+//        return 456;
+//    };
+//    return lv2();
+//};
+
+//alert(lv1());
+
+//var box = 'lee';
+//alert(box);
+//var box2 = box.substring(2);
+//alert(box2);
+
+//var box = new String('mrlee');
+//box.name = 'lee';
+//box.age = function () { return 100; };
+//alert(box.age());
+//alert(box.substring(3));
+
+//var box = 1;
+//alert(box.MAX_VALUE);
+//alert(Number.MAX_VALUE);
+
+//var box = 100;
+//alert(typeof box);
+//alert(typeof box.toString());
+//box.toString();
