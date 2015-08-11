@@ -699,3 +699,30 @@
 //alert(typeof box);
 //alert(typeof box.toString());
 //box.toString();
+
+//var box = "lee";
+//alert(box.length);
+//alert(box.constructor);
+//alert(box.concat('is','dog'));
+
+//var box = '1234567';
+//alert(box.length);
+//alert(box.slice(-2)); 
+//alert(box.slice(3,-1));
+//alert(box.substring(3,-2));
+//alert(box.substr(3,-2));
+//alert(box.substr(-2,-4));
+//alert(box.slice(-3,-1));
+
+//var box = 'lee,lee,AB';
+//alert(box.indexOf('l', 2));
+//alert(box.lastIndexOf('l', 4));
+
+//var box = 'lee,lee,AB';
+//var boxarr = [];
+//var post = box.indexOf('l');
+//while (post > -1) {
+//    boxarr.push(post);
+//    post = box.indexOf('l', post + 1);
+//};
+//alert(boxarr);
